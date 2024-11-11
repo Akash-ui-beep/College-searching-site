@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Search - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Search</h1>
+        <button id="logoutBtn">Logout</button>
+        <input type="text" id="searchBar" placeholder="Search for colleges...">
+        <ul id="collegeList">
+            <li>Harvard University</li>
+            <li>Stanford University</li>
+            <li>Massachusetts Institute of Technology</li>
+            <li>California Institute of Technology</li>
+            <li>University of Chicago</li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

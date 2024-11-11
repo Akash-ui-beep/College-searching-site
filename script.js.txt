@@ -1,0 +1,20 @@
+document.getElementById('loginForm')?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    window.location.href = 'home.html'; // Redirect to home page on login
+});
+
+document.getElementById('logoutBtn')?.addEventListener('click', function() {
+    window.location.href = 'index.html'; // Redirect to login page on logout
+});
+
+document.getElementById('searchBar')?.addEventListener('input', function() {
+    const filter = this.value.toLowerCase();
+    const listItems = document.querySelectorAll('#collegeList li');
+    listItems.forEach(item => {
+        if (item.textContent.toLowerCase().includes(filter)) {
+            item.style.display = '';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
